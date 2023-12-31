@@ -8,7 +8,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "~/consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body
+    class="mx-auto flex max-w-screen-lg bg-neutral-950 text-sm text-neutral-50"
+  >
     <slot />
   </body>
 </html>

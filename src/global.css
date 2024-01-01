@@ -5,3 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+a {
+  @apply underline-offset-4;
+}

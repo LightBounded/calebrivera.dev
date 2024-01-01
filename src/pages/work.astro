@@ -1,7 +1,102 @@
 ---
+import WorkBlock from "~/components/WorkBlock.astro";
 import Layout from "~/layouts/Main.astro";
 ---
 
 <Layout>
-  <div>WIP</div>
+  <section class="prose prose-neutral prose-invert">
+    <h1 class="text-2xl font-medium">my work</h1>
+    <p>
+      I've always loved building user-facing products, and fortunately, I've
+      been able to work with some awesome people to do just that. Here is a
+      brief summary of the work I've done thus far.
+    </p>
+    <hr class="my-6" />
+    <section class="flex flex-col gap-4"></section>
+    <WorkBlock name="Knight Hacks" context="Development Lead">
+      <p>
+        Knight Hacks is Central Florida's largest software engineering
+        organization. I joined as a freshman in hopes of furthering myself as a
+        developer, but found way more than that.
+      </p>
+      <ul>
+        <li>
+          In 2022, I joined Knight Hacks' Development Team as a Front-end
+          Engineer maintaining a admin dashboard built with <a
+            href="https://react.dev/">React</a
+          > for managing data on our hackathons. I built out several components for
+          the dashboard and ensured type-safety across the code base.
+        </li>
+        <li>
+          In 2023, I stepped up as the Front-end Development Lead, where I began
+          leading a small team of front-end engineers to maintain our
+          user-facing products like our hackathon and club site. I also migrated
+          our admin dashboard from <a href="https://webpack.js.org/">Webpack</a>
+          to <a href="https://vitejs.dev/">Vite</a>, where I saw decreases in
+          build times by over 90% and bundle sizes by over 50%.
+        </li>
+        <li>
+          Later in 2023, I was appointed to Development Lead. It was then where
+          I put my focus on the developer experience of working on our products
+          and moved to an entirely serverless infrastructure. I migrated our
+          codebase to a monorepo built with <a
+            href="https://turbo.build/repo"
+            target="_blank">Turborepo</a
+          > and
+          <a href="https://pnpm.io/workspaces" target="_blank">
+            PNPM workspaces</a
+          >
+          , our API from <a
+            href="https://www.apollographql.com/"
+            target="_blank">Apollo GraphQL</a
+          > microservices to <a href="https://trpc.io/" target="_blank">tRPC</a>
+          with <a href="https://hono.dev/" target="_blank">Hono</a> hosted on
+          <a href="https://developers.cloudflare.com/workers/" target="_blank">
+            Cloudflare Workers</a
+          >
+          , and our database from <a href="https://www.postgresql.org/"
+            >PostgreSQL</a
+          > to <a href="https://turso.tech/" target="_blank">Turso</a>
+          with
+          <a href="https://orm.drizzle.team/"> Drizzle ORM</a>.
+        </li>
+      </ul>
+      <p>
+        Since I joined Knight Hacks in 2022, I've learned so much: from new
+        technologies, to how to work with a team, and now, how to lead one.
+        We've grown so much as a club, and I'm so happy to have been a part of
+        such a fantastic community of open-minded and passionate engineers.
+      </p>
+    </WorkBlock>
+    <hr class="my-6" />
+    <WorkBlock
+      name="Discord"
+      context="Software Engineering Intern - Design Systems"
+    >
+      <p>
+        Discord is a communication platform designed to bring communities around
+        the things they love. I joined as a Summer 2023 Software Engineering
+        Intern for their Design Systems team. This team was filled with some of
+        the smartest engineers I've met, all from various backgrounds. I worked
+        on their internal design systems, tools to improve designer workflows
+        using AI, bug fixes, and documentation. It was there I learned much of
+        how to work as a team.
+      </p>
+      <p>
+        During my time at Discord, I learned so much about accessibility in
+        software, things like <a
+          href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+          >WCAG
+        </a> and <a href="https://www.w3.org/WAI/standards-guidelines/aria/"
+          >WAI-ARIA</a
+        >, how to build accessible web and mobile components. Of course, I also
+        learned a lot about how to build and maintain an effective design
+        system, and I think most important of all: how to perform cross
+        functional work across an amazing team of designers, engineers, and
+        product managers. Discord was my first taste of startup culture, and
+        working remote, and I loved every second of it. I can't express how
+        grateful for such a wonderful opportunity.
+      </p>
+    </WorkBlock>
+  </section>
 </Layout>

@@ -4,5 +4,3 @@
 export const SITE_TITLE = "Caleb Rivera";
 export const SITE_DESCRIPTION =
   "Software engineer, cityscape enthusiast, and more.";
-
-export const SITE_URL = "https://calebrivera.com";

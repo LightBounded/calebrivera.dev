@@ -1,5 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "~/layouts/Main.astro";
+import rooftop from "~/assets/rooftop.jpg";
+import budapest from "~/assets/budapest.jpg";
+import lunar from "~/assets/lunar.jpg";
+import timeless from "~/assets/timeless.jpg";
+import walls from "~/assets/walls.jpg";
+import sevenpm from "~/assets/7pm.jpg";
 ---
 
 <Layout>
@@ -18,43 +25,43 @@ import Layout from "~/layouts/Main.astro";
     <div class="my-8">
       <div class="not-prose columns-2 sm:columns-3">
         <div class="relative mb-4 h-40">
-          <img
-            src="/rooftop.jpg"
+          <Image
+            src={rooftop}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt="A girl on a rooptop looking out over a city with a sunset in the background"
           />
         </div>
         <div class="relative mb-4 h-80 sm:mb-0">
-          <img
-            src="/budapest.jpg"
+          <Image
+            src={budapest}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt="An aerial view of Budapest, Hungary"
           />
         </div>
         <div class="relative h-40 sm:mb-4 sm:h-80">
-          <img
-            src="/lunar.jpg"
+          <Image
+            src={lunar}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt="Cityscape with a moon in the background"
           />
         </div>
         <div class="relative mb-4 h-40 sm:mb-0">
-          <img
-            src="/7pm.jpg"
+          <Image
+            src={sevenpm}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt=""
           />
         </div>
         <div class="relative mb-4 h-40">
-          <img
-            src="/timeless.jpg"
+          <Image
+            src={timeless}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt=""
           />
         </div>
         <div class="relative h-80">
-          <img
-            src="/walls.jpg"
+          <Image
+            src={walls}
             class="absolute inset-0 h-full w-full rounded-lg object-cover"
             alt=""
           />

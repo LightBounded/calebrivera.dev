@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "Caleb Rivera";
 export const SITE_DESCRIPTION =
-  "Software engineer, cityscape enthusiast, and more.";
+  "Software engineer, cityscape enthusiast, and caffeine addict.";
